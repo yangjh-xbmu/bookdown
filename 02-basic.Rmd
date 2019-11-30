@@ -1,0 +1,25 @@
+# Bookdown 的基本用法 {#basic}
+
+从本质上讲，bookdown 是基于 Pandoc、markdown、R、Rmarkdown、gitbook、tex、git 等等一系列开源项目上的综合性工具，这套工具大大降低了用户自己整合上述多个工具的成本，以更加高效地方式完成内容创作、发布和维护。
+
+## 使用bookdown创作的流程
+
+### 初始化
+
+使用下载的模板或者bookdown自带的模板，创建bookdown项目。建议使用前者，因为更加适合中文内容的排版。
+
+### 编辑内容
+
+在合适的编辑器中（建议先使用RStudio，后期熟悉后，可使用VS Code之类的功能更为复杂的通用性编辑器），按照markdown以及Rmarkdown的语法规则，进行内容的创作和编辑。
+
+### 预览内容
+
+选择 RStudio 中的“Build Book”功能，生成合适格式。
+
+### 发布
+
+利用 GitHub 和 Gitee 的 page 服务，可将生成的静态页面发布到网络，利用github与
+
+## bookdown 中的章节、结构
+
+## bookdown 中的内容制作
