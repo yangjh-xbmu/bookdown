@@ -20,7 +20,7 @@ lof: yes
 lot: yes
 colorlinks: yes
 site: bookdown::bookdown_site
-biblio-style: apalike
+biblio-style: "GBT7714-2005"
 ---
 
 ```{r setup, include=FALSE}
@@ -47,6 +47,6 @@ sessionInfo()
 
 ```{block2, type='flushright', html.tag='p'}
 杨志宏  
-于 世界的角落
+于 世界之最温暖处
 ```
 

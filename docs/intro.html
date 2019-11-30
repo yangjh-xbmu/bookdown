@@ -33,14 +33,14 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="basic.html"/>
-<script src="libs/jquery/jquery.min.js"></script>
-<link href="libs/gitbook/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -130,13 +130,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">中文书示例</a></li>
+<li><a href="./">bookdown使用</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>前言</a></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Bookdown 介绍及安装</a><ul>
 <li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#为什么用-bookdown"><i class="fa fa-check"></i><b>1.1</b> 为什么用 bookdown</a></li>
-<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#使用-bookdown-的准备工作"><i class="fa fa-check"></i><b>1.2</b> 使用 bookdown 的准备工作</a><ul>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#使用-bookdown-前的准备工作"><i class="fa fa-check"></i><b>1.2</b> 使用 bookdown 前的准备工作</a><ul>
 <li class="chapter" data-level="1.2.1" data-path="intro.html"><a href="intro.html#安装-r"><i class="fa fa-check"></i><b>1.2.1</b> 安装 R</a></li>
 <li class="chapter" data-level="1.2.2" data-path="intro.html"><a href="intro.html#安装-rstudio"><i class="fa fa-check"></i><b>1.2.2</b> 安装 Rstudio</a></li>
 <li class="chapter" data-level="1.2.3" data-path="intro.html"><a href="intro.html#安装-bookdown"><i class="fa fa-check"></i><b>1.2.3</b> 安装 bookdown</a></li>
@@ -151,11 +151,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.3" data-path="basic.html"><a href="basic.html#预览内容"><i class="fa fa-check"></i><b>2.1.3</b> 预览内容</a></li>
 <li class="chapter" data-level="2.1.4" data-path="basic.html"><a href="basic.html#发布"><i class="fa fa-check"></i><b>2.1.4</b> 发布</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="basic.html"><a href="basic.html#bookdown-中的章节结构"><i class="fa fa-check"></i><b>2.2</b> bookdown 中的章节、结构</a></li>
-<li class="chapter" data-level="2.3" data-path="basic.html"><a href="basic.html#bookdown-中的内容制作"><i class="fa fa-check"></i><b>2.3</b> bookdown 中的内容制作</a></li>
+<li class="chapter" data-level="2.2" data-path="basic.html"><a href="basic.html#bookdown-对文档的组织"><i class="fa fa-check"></i><b>2.2</b> bookdown 对文档的组织</a></li>
+<li class="chapter" data-level="2.3" data-path="basic.html"><a href="basic.html#bookdown-语法"><i class="fa fa-check"></i><b>2.3</b> bookdown 语法</a></li>
 </ul></li>
-<li class="appendix"><span><b>附录</b></span></li>
-<li class="chapter" data-level="A" data-path="sound.html"><a href="sound.html"><i class="fa fa-check"></i><b>A</b> 余音绕梁</a></li>
+<li class="chapter" data-level="3" data-path="howtodo.html"><a href="howtodo.html"><i class="fa fa-check"></i><b>3</b> 常用功能的实现</a><ul>
+<li class="chapter" data-level="3.1" data-path="howtodo.html"><a href="howtodo.html#如何插入参考文献"><i class="fa fa-check"></i><b>3.1</b> 如何插入参考文献</a></li>
+<li class="chapter" data-level="3.2" data-path="howtodo.html"><a href="howtodo.html#如何将参考文献格式调整为国标格式"><i class="fa fa-check"></i><b>3.2</b> 如何将参考文献格式调整为国标格式</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">本书由 bookdown 强力驱动</a></li>
@@ -196,8 +198,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>但bookdown也存在学习成本较高的问题，估计大多数科研人员不会投入时间去了解。我碰巧有tex、gitbook的使用经验，所以在用bookdown时能够较快地掌握，但即便如此，我也花费了近2天时间，才算基本掌握。</p>
 </div>
-<div id="使用-bookdown-的准备工作" class="section level2">
-<h2><span class="header-section-number">1.2</span> 使用 bookdown 的准备工作</h2>
+<div id="使用-bookdown-前的准备工作" class="section level2">
+<h2><span class="header-section-number">1.2</span> 使用 bookdown 前的准备工作</h2>
 <div id="安装-r" class="section level3">
 <h3><span class="header-section-number">1.2.1</span> 安装 R</h3>
 <p>到<a href="https://www.r-project.org/">R的官方网站</a>，下载适合系统的最新包，尤其是 Mac 系统，还需要安装官方网站提到的 XQuartz 。</p>
@@ -235,15 +237,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a href="basic.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
-<script src="libs/gitbook/js/app.min.js"></script>
-<script src="libs/gitbook/js/lunr.js"></script>
-<script src="libs/gitbook/js/clipboard.min.js"></script>
-<script src="libs/gitbook/js/plugin-search.js"></script>
-<script src="libs/gitbook/js/plugin-sharing.js"></script>
-<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook/js/jquery.highlight.js"></script>
-<script src="libs/gitbook/js/plugin-clipboard.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -263,7 +265,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/yihui/bookdown-chinese/edit/master/01-introduction.Rmd",
+"link": "https://github.com/yangjh-xbmu/bookdown/edit/master/introduction.Rmd",
 "text": "编辑"
 },
 "history": {
@@ -276,7 +278,7 @@ gitbook.start({
 },
 "download": ["bookdown.pdf", "bookdown.epub"],
 "toc": {
-"collapse": "none"
+"collapse": "section"
 }
 });
 });
