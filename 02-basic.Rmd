@@ -18,7 +18,7 @@
 
 ### 发布
 
-利用 GitHub 和 Gitee 的 page 服务，可将生成的静态页面发布到网络，利用github与
+利用 GitHub 和 Gitee 的 page 服务，可将生成的静态页面发布到网络。
 
 ## bookdown 中的章节、结构
 

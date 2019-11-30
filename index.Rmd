@@ -14,7 +14,7 @@ geometry:
 - bmargin=2.5cm
 - lmargin=3.5cm
 - rmargin=2.5cm
-github-repo: yihui/bookdown-chinese
+github-repo: yangjh-xbmu/bookdown
 link-citations: yes
 lof: yes
 lot: yes
