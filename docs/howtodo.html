@@ -24,7 +24,7 @@
 <meta name="author" content="杨志宏" />
 
 
-<meta name="date" content="2019-11-30" />
+<meta name="date" content="2019-12-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -157,6 +157,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3" data-path="howtodo.html"><a href="howtodo.html"><i class="fa fa-check"></i><b>3</b> 常用功能的实现</a><ul>
 <li class="chapter" data-level="3.1" data-path="howtodo.html"><a href="howtodo.html#如何插入参考文献"><i class="fa fa-check"></i><b>3.1</b> 如何插入参考文献</a></li>
 <li class="chapter" data-level="3.2" data-path="howtodo.html"><a href="howtodo.html#如何将参考文献格式调整为国标格式"><i class="fa fa-check"></i><b>3.2</b> 如何将参考文献格式调整为国标格式</a></li>
+<li class="chapter" data-level="3.3" data-path="howtodo.html"><a href="howtodo.html#如何设置索引"><i class="fa fa-check"></i><b>3.3</b> 如何设置索引</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
 <li class="divider"></li>
@@ -201,6 +202,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb15-4"><a href="howtodo.html#cb15-4"></a><span class="fu">link-citations</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb15-5"><a href="howtodo.html#cb15-5"></a><span class="pp">---</span></span></code></pre></div>
 <p>与此同时，还需要将上述文件复制到项目目录中，不过上述设定，仅对PDF和word输出时起作用，对于gitbook格式，则没有效果。</p>
+</div>
+<div id="如何设置索引" class="section level2">
+<h2><span class="header-section-number">3.3</span> 如何设置索引</h2>
+<p>在一些书的后面，我们可以看到一些人名、术语的索引（index），在bookdown中，可以通过<code>\index{}</code>实现。</p>
+<p>但目前而言，只支持PDF格式的输出。需要在latex的导言区文件<code>preamble.tex</code>中，加入：</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb16-1"><a href="howtodo.html#cb16-1"></a><span class="bu">\usepackage</span>{<span class="ex">makeidx</span>}</span>
+<span id="cb16-2"><a href="howtodo.html#cb16-2"></a><span class="fu">\makeindex</span></span></code></pre></div>
+<p>然后在配置文件<code>after_body.tex</code>中，加入：</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb17-1"><a href="howtodo.html#cb17-1"></a><span class="fu">\printindex</span></span></code></pre></div>
+<p>如果使用 bookdown 提供的模板，上述设置已被默认。</p>
 
 </div>
 </div>

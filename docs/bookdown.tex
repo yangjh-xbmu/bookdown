@@ -163,7 +163,7 @@
 
 \title{使用 BookDown 制作在线电子书}
 \author{杨志宏}
-\date{2019-11-30}
+\date{2019-12-01}
 
 \let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
 \begin{document}
@@ -467,6 +467,28 @@ rmd_files:
 \end{Shaded}
 
 与此同时，还需要将上述文件复制到项目目录中，不过上述设定，仅对PDF和word输出时起作用，对于gitbook格式，则没有效果。
+
+\hypertarget{ux5982ux4f55ux8bbeux7f6eux7d22ux5f15}{%
+\section{如何设置索引}\label{ux5982ux4f55ux8bbeux7f6eux7d22ux5f15}}
+
+在一些书的后面，我们可以看到一些人名、术语的索引\index{索引}（index），在bookdown中，可以通过\texttt{\textbackslash{}index\{\}}实现。
+
+但目前而言，只支持PDF格式的输出。需要在latex的导言区文件\texttt{preamble.tex}中，加入：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{makeidx}\NormalTok{\}}
+\FunctionTok{\textbackslash{}makeindex}
+\end{Highlighting}
+\end{Shaded}
+
+然后在配置文件\texttt{after\_body.tex}中，加入：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textbackslash{}printindex}
+\end{Highlighting}
+\end{Shaded}
 
 \bibliography{book.bib,packages.bib}
 

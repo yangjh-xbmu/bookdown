@@ -28,3 +28,23 @@ link-citations: true
 ```
 
 与此同时，还需要将上述文件复制到项目目录中，不过上述设定，仅对PDF和word输出时起作用，对于gitbook格式，则没有效果。
+
+## 如何设置索引
+
+在一些书的后面，我们可以看到一些人名、术语的索引\index{索引}（index），在bookdown中，可以通过`\index{}`实现。
+
+但目前而言，只支持PDF格式的输出。需要在latex的导言区文件`preamble.tex`中，加入：
+
+```tex
+\usepackage{makeidx}
+\makeindex
+```
+
+然后在配置文件`after_body.tex`中，加入：
+
+```tex
+\printindex
+```
+
+如果使用 bookdown 提供的模板，上述设置已被默认。
+
