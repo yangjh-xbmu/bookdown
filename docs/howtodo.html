@@ -24,7 +24,7 @@
 <meta name="author" content="杨志宏" />
 
 
-<meta name="date" content="2019-12-01" />
+<meta name="date" content="2019-12-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -158,6 +158,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="howtodo.html"><a href="howtodo.html#如何插入参考文献"><i class="fa fa-check"></i><b>3.1</b> 如何插入参考文献</a></li>
 <li class="chapter" data-level="3.2" data-path="howtodo.html"><a href="howtodo.html#如何将参考文献格式调整为国标格式"><i class="fa fa-check"></i><b>3.2</b> 如何将参考文献格式调整为国标格式</a></li>
 <li class="chapter" data-level="3.3" data-path="howtodo.html"><a href="howtodo.html#如何设置索引"><i class="fa fa-check"></i><b>3.3</b> 如何设置索引</a></li>
+<li class="chapter" data-level="3.4" data-path="howtodo.html"><a href="howtodo.html#如何增加章节"><i class="fa fa-check"></i><b>3.4</b> 如何增加章节</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>参考文献</a></li>
 <li class="divider"></li>
@@ -212,6 +213,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>然后在配置文件<code>after_body.tex</code>中，加入：</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb17-1"><a href="howtodo.html#cb17-1"></a><span class="fu">\printindex</span></span></code></pre></div>
 <p>如果使用 bookdown 提供的模板，上述设置已被默认。</p>
+</div>
+<div id="如何增加章节" class="section level2">
+<h2><span class="header-section-number">3.4</span> 如何增加章节</h2>
+<ol style="list-style-type: decimal">
+<li><p>新建<code>.Rmd</code>文件。如果采用指定内容的方式，还需要在配置文件<code>_bookdown.yml</code>中，将文件名加入到字段<code>rmd_files</code>中。</p></li>
+<li><p><code>.Rmd</code>文件首行需要为一级标题。</p></li>
+<li><p>一级标题后，使用<code>{#}</code>增加标签。</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb18-1"><a href="howtodo.html#cb18-1"></a><span class="fu"># 常用功能的实现 {#howtodo}</span></span></code></pre></div></li>
+</ol>
 
 </div>
 </div>
