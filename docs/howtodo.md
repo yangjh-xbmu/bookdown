@@ -57,3 +57,12 @@ link-citations: true
    ```markdown
    # 常用功能的实现 {#howtodo}
    ```
+
+## 如何对内容进行分区
+
+在需要分区的章节标题前使用如下标记：
+
+```markdown
+# (PART) Get Started {-}
+# (APPENDIX) Appendix {-}
+```

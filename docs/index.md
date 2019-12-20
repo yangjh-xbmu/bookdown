@@ -1,7 +1,7 @@
 --- 
 title: "使用 BookDown 制作在线电子书"
 author: "杨志宏"
-date: "2019-12-09"
+date: "2019-12-20"
 output: pdf_document
 bibliography:
 - book.bib
@@ -39,7 +39,7 @@ sessionInfo()
 ```
 ## R version 3.6.1 (2019-07-05)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS Catalina 10.15.1
+## Running under: macOS Catalina 10.15.2
 ## 
 ## Matrix products: default
 ## BLAS:   /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRblas.0.dylib
