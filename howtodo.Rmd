@@ -66,3 +66,12 @@ link-citations: true
 # (PART) Get Started {-}
 # (APPENDIX) Appendix {-}
 ```
+
+## 如何使用模板创建项目
+
+基于已有项目创建新的项目时，需要注意如下几点：
+
+1. 更改`.Rproj`中`site directory`的设置；
+1. 更改`index.Rmd`中的`title`、`description`、`github-repo`的设置；
+1. 更改`_bookdown.yml`中`book-filename`、`outputdir`、`rmdfiles`的设置；
+1. 更改`_output.yml`中`before`、`edit`的设置。

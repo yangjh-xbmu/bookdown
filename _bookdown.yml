@@ -7,7 +7,7 @@ language:
   ui:
     edit: "编辑"
     chapter_name: ["第 ", " 章"]
-output_dir: "docs"
+output_dir: "../bookdown-pub/bookdown"
 rmd_files: ["index.Rmd", "introduction.Rmd", "basic.Rmd", "howtodo.Rmd", "refer.Rmd"]
 delete_merged_file: true
 new_session: true
